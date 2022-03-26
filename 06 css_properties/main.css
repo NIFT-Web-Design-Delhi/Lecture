@@ -1,0 +1,76 @@
+/*
+====================
+BOX MODAL
+====================
+ */
+
+ /* Different types of Paddings & Margins */
+h1 {
+  /* padding: Left Right Bottom Top; */
+  padding: 30px 40px 50px 60px;
+  /* padding: Top&Bottom Right&Left; */
+  padding: 40px 50px;
+
+  /* margin: Left Right Bottom Top; */
+  margin: 30px 40px 50px 60px;
+  /* madding: Top&Bottom Right&Left; */
+  margin: 20px 10px;
+}
+
+/* Borders */
+p {
+  /* This will only apply to the bottom border */
+  border-bottom: 1px solid red;
+  /* This will apply to all the borders */
+  border: 1px solid blue;
+}
+
+/* Height & Width */
+div {
+  height: auto;
+  width: 300px;
+  /* We have the following also */
+  /* max-width | min-width | max-height | min-height */
+}
+
+
+/*
+====================
+BACKGROUND
+====================
+ */
+
+/* Defines the background color */
+div {
+  /* Color by NAMES */
+  background-color: red;
+  /* Color by Hex code */
+  background-color: #3EA47F;
+  /* Color by rgb */
+  background-color: rgb(62,164,127);
+  /* Color by rgba - with Opacity */
+  background-color: rgba(62,164,127,70%);
+}
+
+/* Background Image */
+div {
+  background-image: url("https://www.optimal-partners.com/site_images/ourServicesHeader.jpg");
+}
+
+
+/*
+====================
+TYPOGRAPHY
+====================
+ */
+
+p {
+  color: white;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  text-align: right;
+}
