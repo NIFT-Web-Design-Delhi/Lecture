@@ -16,12 +16,10 @@ section {
 }
 
 /* Class Selector */
-/* For any element, there can be
-multiple classes applied */
+/* For any element, there can be multiple classes applied */
 .classExample {
   border-left: 2px solid red;
 }
-
 .borderBottom {
   border-bottom: 5px dashed blue;
 }
