@@ -1,0 +1,42 @@
+/* This file is going to show
+different ways to target the styles
+using Selectors  */
+
+/* Universal Selector */
+* {
+  /* background-color: green; */
+}
+
+/* Type Selector | TagName */
+h1 {
+  background-color: lightgrey;
+}
+section {
+  border: 2px solid green;
+}
+
+/* Class Selector */
+/* For any element, there can be
+multiple classes applied */
+.classExample {
+  border-left: 2px solid red;
+}
+
+.borderBottom {
+  border-bottom: 5px dashed blue;
+}
+
+/* ID Selector */
+#highlight {
+  border-left: 2px solid green;
+}
+
+/* Group Selectors */
+h1, section p {
+  font-size: 50px;
+}
+
+/* Desendent Slector */
+body section div p {
+  background-color: red;
+}
