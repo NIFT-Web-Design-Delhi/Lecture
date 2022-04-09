@@ -98,6 +98,7 @@ header nav .menuItem.active .colouredLine {
 }
 
 .subMenu {
+  background-color: white;
   position: absolute;
   width: 100px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -108,7 +109,6 @@ header nav .menuItem.active .colouredLine {
   transition: all .2s;
   visibility: hidden;
   opacity: 0;
-  z-index: -1;
 }
 
 .subMenu p {
@@ -264,25 +264,45 @@ section#banner {
   display: flex;
 }
 
-/* This will only select the first top level divs inside the "collage" Conatainer */
-#collage > div {
+#singleCollage, #smallerCollage {
   position: relative;
   width: 50%;
 }
 
+/* All 5 Images below: */
 #collage #singleCollage {
   background-image: url(./images/collage_1.jpeg);
+  background-size: contain;
+}
+#smallerCollage div:nth-child(1) {
+  background-image: url(./images/collage_2.jpeg);
+  background-size: contain;
+}
+#smallerCollage div:nth-child(2) {
+  background-image: url(./images/collage_3.jpeg);
+  background-size: contain;
+}
+#smallerCollage div:nth-child(3) {
+  background-image: url(./images/collage_4.jpeg);
+  background-size: contain;
+}
+#smallerCollage div:nth-child(4) {
+  background-image: url(./images/collage_5.jpeg);
   background-size: contain;
 }
 
 #collage #smallerCollage {
   display: flex;
+  flex-flow: row wrap;
 }
 
+/* This will set all of the 4 children inside the #smallerCollage to 50% each of the #smallerCollage  */
 #collage #smallerCollage div {
-  background-image: url(./images/collage_1.jpeg);
+  position: relative;
+  width: 50%;
 }
 
+/* The Overlay over the Image */
 #collage span {
   position: absolute;
   display: block;
@@ -292,13 +312,8 @@ section#banner {
   width: 90%;
   margin-left: 5%;
   opacity: 0;
-  bottom: -40px;
-  transition: all .3s;
-}
-
-#singleCollage:hover span {
-  opacity: 1;
-  bottom: 20px;
+  bottom: 0px;
+  transition: all .4s;
 }
 
 #collage span h6 {
@@ -309,4 +324,10 @@ section#banner {
 
 #collage span p {
   color: grey;
+}
+
+/* Hover effect on the bigger & smaller images */
+#singleCollage:hover span, #smallerCollage > div:hover span {
+  opacity: 1;
+  bottom: 20px;
 }
