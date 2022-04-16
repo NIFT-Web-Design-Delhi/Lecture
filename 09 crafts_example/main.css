@@ -97,6 +97,7 @@ header nav .menuItem.active .colouredLine {
   margin-left: 0 !important;
 }
 
+/* Sub Menu on hover over Blog Nav Link */
 .subMenu {
   background-color: white;
   position: absolute;
@@ -182,13 +183,37 @@ section#banner {
 }
 
 /* ==========================================================================
+   About Container
+   ========================================================================== */
+#aboutContainer {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+#aboutContainer:before {
+  display: block;
+  content: '';
+  background-image: url(./svgs/vector_1.svg);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-position: 300px 100px;
+  transform: rotate(-30deg);
+  z-index: -1;
+}
+
+/*
    About Section
    ========================================================================== */
 #about {
-  display: flex;
   width: 1300px;
   margin: 0 auto;
   padding: 120px 0;
+  display: flex;
   gap: 100px;
 }
 
@@ -230,7 +255,6 @@ section#banner {
 
 #aboutSubSections a div span {
   display: inline-block;
-  background-color: red;
   width: 15px;
   height: 2px;
   transition: all .2s;
@@ -254,13 +278,13 @@ section#banner {
   width: 15px;
 }
 
-/* ==========================================================================
-   About Collage
+/*
+   Collage Section
    ========================================================================== */
 #collage {
   width: 1300px;
   height: 650px;
-  margin: 0 auto 400px;
+  margin: 0 auto;
   display: flex;
 }
 
